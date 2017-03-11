@@ -1,0 +1,94 @@
+<!-- ==============================================
+	 Header
+	 =============================================== -->
+<header id="header-wrapper">
+  <header id="header-carousel" class="header-two">
+  </header><!--./header -->
+
+  <header id="header-content" [class.show]="sliderReady" class="header-two">
+    <div class="container">
+      <div class="content">
+
+        <div class="row">
+          <h1 class="name revealOnScroll" data-animation="fadeInDown"><img src="/assets/img/fluengo-logo-white.png"></h1>
+          <p class="temp">Learn a Foreign Language From a Native</p>
+          <p class="form-row animations scale-in d3 temp">
+            <home-search [languages]="languages" [locations]="locations" [select2LanguageOptions]="select2LanguageOptions" [select2LocationOptions]="select2LocationOptions" [searchAction]="searchTeachers.bind(this)"></home-search>
+          </p>
+
+        </div>
+
+
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 hidden-xs">
+            <div class="logos">
+              <img src="/assets/img/featured-logos.png" class="img-responsive" alt=""/>		  </div>
+            <!--./logos -->
+          </div>
+          <!--./col-lg-10 -->
+        </div><!--./row -->
+
+      </div><!--./content -->
+    </div><!--./container -->
+  </header>
+</header>
+
+<section id="services" class="services">
+  <div class="container text-center">
+
+    <div class="row">
+      <div class="col-lg-12">
+       <!-- <h3>Browse Freelance Services</h3>
+        <hr class="mint">
+        <p class="top-p">View over 30,000 available services by category.</p>-->
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="features one">
+		    <span class="fa-stack fa-3x">
+			 <i class="fa fa-circle fa-stack-2x"></i>
+			 <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+			</span><!-- /span -->
+              <h4>Why Fluengo</h4>
+            </div><!-- /.features -->
+            <div class="spacer">
+              <p>Designer, Developer, Project Management, Front-End Developer.</p>
+              <p><b>Over 2,000 services</b></p>
+            </div> <!-- /.spacer -->
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="features two">
+		    <span class="fa-stack fa-3x">
+			 <i class="fa fa-circle fa-stack-2x"></i>
+			 <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
+			</span><!-- /span -->
+              <h4>Why Fluengo</h4>
+            </div><!-- /.features -->
+            <div class="spacer">
+              <p>Design, Logo Design, Animation, Graphic Design, 3D, Adobe photoshop.</p>
+              <p><b>Over 2,000 services</b></p>
+            </div> <!-- /.spacer -->
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="features three">
+		    <span class="fa-stack fa-3x">
+			 <i class="fa fa-circle fa-stack-2x"></i>
+			 <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+			</span><!-- /span -->
+              <h4>Why Fluengo</h4>
+            </div><!-- /.features -->
+            <div class="spacer">
+              <p>Content Writing, English Translation, Articles, SEO, Translation, Research.</p>
+              <p><b>Over 2,000 services</b></p>
+            </div> <!-- /.spacer -->
+        </div><!-- /.col-lg-4 -->
+
+      </div><!-- /.col-lg-12 -->
+    </div><!-- /.row -->
+
+
+
+  </div><!-- /.container -->
+</section>
+

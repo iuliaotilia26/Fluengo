@@ -1,0 +1,20 @@
+<modal #edit>
+
+  <modal-header [show-close]="true">
+    <h4 class="modal-title">Your student profile</h4>
+  </modal-header>
+  <modal-body>
+
+    <div *ngIf="stepNumber==1">
+      <edit-modalStep1 [profileInfo]="profileInfo"  (onSubmitted)="onSubmitted($event)"></edit-modalStep1>
+    </div>
+    <div *ngIf="stepNumber==2">
+      <edit-modalStep2 [profileInfo]="profileInfo" (onSubmitted2)="onSubmitted2($event)"></edit-modalStep2>
+    </div>
+
+  </modal-body>
+
+  <modal-footer>
+  </modal-footer>
+
+</modal>

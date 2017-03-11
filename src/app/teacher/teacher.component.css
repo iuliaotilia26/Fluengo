@@ -1,0 +1,41 @@
+/*styles for home content only*/
+.header-jobpost{
+  height:7vh;
+}
+
+div.job:before {
+  content: none;
+}
+.modal-wide .modal-dialog {
+  width: 80%;
+}
+
+.modal-dialog.modal-sm {
+   width: 480px;
+   padding: 0;
+   margin: 30px auto 30px auto;
+}
+
+.modal-backdrop.in {
+  opacity: 0.75;
+}
+
+.modal-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.modal-content {
+  border-radius: 5px;
+}
+
+.modal-body {
+  margin: 0;
+  padding: 20px 0 10px;
+}
+
+.modal-header .close {
+  margin-top: 2px;
+  margin-right: 14px;
+}

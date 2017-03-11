@@ -1,0 +1,26 @@
+<!--<form class="form" role="form" [formGroup]="formImage" (ngSubmit)="onSubmit(form.value)" >//tried with image upload first module
+
+   <image-upload
+    [max]="100"
+    [url]="'localhost:3000/api/upload'"
+    [buttonCaption]="'Select image!'"
+    [dropBoxMessage]="'Drop your image here!'"
+    (onFileUploadFinish)="imageUploaded($event)"
+    (onRemove)="imageRemoved($event)"
+    (isPending)="disableSendButton($event)"
+    ></image-upload>
+
+
+    <button class="btn btn-success full-width"  type="submit" ><i class="fa fa-check" aria-hidden="true"></i>Upload picture</button>
+
+</form>-->
+
+<!--express file-upload-->
+
+<form class="form" role="form" [formGroup]="formImage" (ngSubmit)="onSubmit()"
+      action='/api/upload'
+      method='POST'
+      encType="multipart/form-data">
+  <input type="file" name="sampleFile" id="imageFile"/>
+  <button type="submit" class="buton" [disabled]="!formImage.valid"><i class="fa fa-check" aria-hidden="true"></i>Upload picture</button>
+</form>

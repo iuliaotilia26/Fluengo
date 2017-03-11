@@ -1,0 +1,51 @@
+<section class="services">
+<div class="container text-center">
+
+
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Your bookings</h3>
+      <hr class="mint">
+
+     <profile-card  [model]="booking" *ngFor="let booking of profileBookings"></profile-card>
+
+      <div *ngIf="profileBookings.length === 0">
+        <div class="announce">
+          <a [routerLink]="['/teachers']">You have no bookings. Book a lesson now</a>
+        </div>
+      </div>
+
+      <div class="col-lg-11 ">
+        <div>
+          <button class="kafe-btn kafe-btn-mint-small" (click)="openModalEdit()">Edit your student profile</button>
+        </div>
+      </div>
+
+      <div class="col-lg-11 ">
+        <div>
+          <button class="kafe-btn kafe-btn-mint-small" (click)="openModalCreate()">Customize your teacher profile</button>
+        </div>
+      </div>
+
+      <div class="modal fade  modal-wide" >
+        <div class="modal-dialog custom-class">
+          <create-modal></create-modal>
+        </div>
+      </div>
+
+      <div class="modal fade  modal-wide" >
+        <div class="modal-dialog custom-class">
+          <edit-modal></edit-modal>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+</div>
+
+
+</section>

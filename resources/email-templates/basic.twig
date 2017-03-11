@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- If you delete this meta tag, Half Life 3 will never be released. -->
+<meta name="viewport" content="width=device-width" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ZURBemails</title>
+
+<!--<link rel="stylesheet" type="text/css" href="stylesheets/email.css" />-->
+<style>
+/* -------------------------------------
+		GLOBAL
+------------------------------------- */
+* {
+	margin:0;
+	padding:0;
+}
+* { font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
+img {
+	max-width: 100%;
+}
+.collapse {
+	margin:0;
+	padding:0;
+}
+body {
+	-webkit-font-smoothing:antialiased;
+	-webkit-text-size-adjust:none;
+	width: 100%!important;
+	height: 100%;
+}
+
+
+/* -------------------------------------
+		ELEMENTS
+------------------------------------- */
+a { color: #2BA6CB;}
+
+.btn {
+	text-decoration:none;
+	color: #FFF;
+	background-color: #666;
+	padding:10px 16px;
+	font-weight:bold;
+	margin-right:10px;
+	text-align:center;
+	cursor:pointer;
+	display: inline-block;
+}
+
+p.callout {
+	padding:15px;
+	background-color:#ECF8FF;
+	margin-bottom: 15px;
+}
+.callout a {
+	font-weight:bold;
+	color: #2BA6CB;
+}
+
+table.social {
+/* 	padding:15px; */
+	background-color: #ebebeb;
+
+}
+.social .soc-btn {
+	padding: 3px 7px;
+	font-size:12px;
+	margin-bottom:10px;
+	text-decoration:none;
+	color: #FFF;font-weight:bold;
+	display:block;
+	text-align:center;
+}
+a.fb { background-color: #3B5998!important; }
+a.tw { background-color: #1daced!important; }
+a.gp { background-color: #DB4A39!important; }
+a.ms { background-color: #000!important; }
+
+.sidebar .soc-btn {
+	display:block;
+	width:100%;
+}
+
+/* -------------------------------------
+		HEADER
+------------------------------------- */
+table.head-wrap { width: 100%;}
+
+.header.container table td.logo { padding: 15px; }
+.header.container table td.label { padding: 15px; padding-left:0px;}
+
+
+/* -------------------------------------
+		BODY
+------------------------------------- */
+table.body-wrap { width: 100%;}
+
+
+/* -------------------------------------
+		FOOTER
+------------------------------------- */
+table.footer-wrap { width: 100%;	clear:both!important;
+}
+.footer-wrap .container td.content  p { border-top: 1px solid rgb(215,215,215); padding-top:15px;}
+.footer-wrap .container td.content p {
+	font-size:10px;
+	font-weight: bold;
+
+}
+
+
+/* -------------------------------------
+		TYPOGRAPHY
+------------------------------------- */
+h1,h2,h3,h4,h5,h6 {
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; line-height: 1.1; margin-bottom:15px; color:#000;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 60%; color: #6f6f6f; line-height: 0; text-transform: none; }
+
+h1 { font-weight:200; font-size: 44px;}
+h2 { font-weight:200; font-size: 37px;}
+h3 { font-weight:500; font-size: 27px;}
+h4 { font-weight:500; font-size: 23px;}
+h5 { font-weight:900; font-size: 17px;}
+h6 { font-weight:900; font-size: 14px; text-transform: uppercase; color:#444;}
+
+.collapse { margin:0!important;}
+
+p, ul {
+	margin-bottom: 10px;
+	font-weight: normal;
+	font-size:14px;
+	line-height:1.6;
+}
+p.lead { font-size:17px; }
+p.last { margin-bottom:0px;}
+
+ul li {
+	margin-left:5px;
+	list-style-position: inside;
+}
+
+/* -------------------------------------
+		SIDEBAR
+------------------------------------- */
+ul.sidebar {
+	background:#ebebeb;
+	display:block;
+	list-style-type: none;
+}
+ul.sidebar li { display: block; margin:0;}
+ul.sidebar li a {
+	text-decoration:none;
+	color: #666;
+	padding:10px 16px;
+/* 	font-weight:bold; */
+	margin-right:10px;
+/* 	text-align:center; */
+	cursor:pointer;
+	border-bottom: 1px solid #777777;
+	border-top: 1px solid #FFFFFF;
+	display:block;
+	margin:0;
+}
+ul.sidebar li a.last { border-bottom-width:0px;}
+ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.sidebar li a h5,ul.sidebar li a h6,ul.sidebar li a p { margin-bottom:0!important;}
+
+
+
+/* ---------------------------------------------------
+		RESPONSIVENESS
+		Nuke it from orbit. It's the only way to be sure.
+------------------------------------------------------ */
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+	display:block!important;
+	max-width:600px!important;
+	margin:0 auto!important; /* makes it centered */
+	clear:both!important;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+	padding:15px;
+	max-width:600px;
+	margin:0 auto;
+	display:block;
+}
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table { width: 100%; }
+
+
+/* Odds and ends */
+.column {
+	width: 300px;
+	float:left;
+}
+.column tr td { padding: 15px; }
+.column-wrap {
+	padding:0!important;
+	margin:0 auto;
+	max-width:600px!important;
+}
+.column table { width:100%;}
+.social .column {
+	width: 280px;
+	min-width: 279px;
+	float:left;
+}
+
+/* Be sure to place a .clear element after each set of columns, just to be safe */
+.clear { display: block; clear: both; }
+
+
+/* -------------------------------------------
+		PHONE
+		For clients that support media queries.
+		Nothing fancy.
+-------------------------------------------- */
+@media only screen and (max-width: 600px) {
+
+	a[class="btn"] { display:block!important; margin-bottom:10px!important; background-image:none!important; margin-right:0!important;}
+
+	div[class="column"] { width: auto!important; float:none!important;}
+
+	table.social div[class="column"] {
+		width:auto!important;
+	}
+
+}
+</style>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<!-- HEADER -->
+<table class="head-wrap" bgcolor="#999999">
+	<tr>
+		<td></td>
+		<td class="header container" >
+
+				<div class="content">
+				<table bgcolor="#999999">
+					<tr>
+						<td><img src="data:image/png;base64,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" alt="fluengo"></td>
+					</tr>
+				</table>
+				</div>
+
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /HEADER -->
+
+
+<!-- BODY -->
+<table class="body-wrap">
+	<tr>
+		<td></td>
+		<td class="container" bgcolor="#FFFFFF">
+
+			<div class="content">
+			<table>
+				<tr>
+					<td>
+						{{ email_content }}
+
+						<!-- social & contact -->
+						<table class="social" width="100%">
+							<tr>
+								<td>
+
+									<!-- column 1 -->
+									<table align="left" class="column">
+										<tr>
+											<td>
+
+												<h5 class="">Connect with Us:</h5>
+												<p class=""><a href="#" class="soc-btn fb">Facebook</a> <a href="#" class="soc-btn tw">Twitter</a> <a href="#" class="soc-btn gp">Google+</a></p>
+
+
+											</td>
+										</tr>
+									</table><!-- /column 1 -->
+
+									<!-- column 2 -->
+									<table align="left" class="column">
+										<tr>
+											<td>
+
+												<h5 class="">Contact Info:</h5>
+												<p>Phone: <strong>408.341.0600</strong><br/>
+                Email: <strong><a href="emailto:someone@fluengo.app">someone@fluengo.app</a></strong></p>
+
+											</td>
+										</tr>
+									</table><!-- /column 2 -->
+
+									<span class="clear"></span>
+
+								</td>
+							</tr>
+						</table><!-- /social & contact -->
+
+					</td>
+				</tr>
+			</table>
+			</div><!-- /content -->
+
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /BODY -->
+
+<!-- FOOTER -->
+<table class="footer-wrap">
+	<tr>
+		<td></td>
+		<td class="container">
+
+				<!-- content -->
+				<div class="content">
+				<table>
+				<tr>
+					<td align="center">
+						<p>
+							<a href="#">Terms</a> |
+							<a href="#">Privacy</a> |
+							<a href="#"><unsubscribe>Unsubscribe</unsubscribe></a>
+						</p>
+					</td>
+				</tr>
+			</table>
+				</div><!-- /content -->
+
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /FOOTER -->
+
+</body>
+</html>

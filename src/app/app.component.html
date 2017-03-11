@@ -1,0 +1,110 @@
+<!-- ==============================================
+	 Navbar
+	 =============================================== -->
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <a class="navbar-brand" [routerLink]="['/home']"><img src="/assets/img/fluengo-logo-white.png"></a>
+    <input type="checkbox" id="toggle" />
+    <label for="toggle" class="toggle"></label>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <ul class="menu">
+      <li><a [routerLink]="['/home']">Home</a></li>
+      <li><a [routerLink]="['/teachers']">Teachers</a></li>
+
+      <li *ngIf="isLogged===false">
+          <button class="btn btn-success" (click)="registerUser()"> Join us</button>
+      </li>
+
+    </ul><!-- /.ul.menu -->
+  </div><!-- /.container -->
+
+  <div class="modal fade  modal-wide" >
+    <div class="modal-dialog custom-class">
+      <signin-modal></signin-modal>
+    </div>
+  </div>
+
+
+
+</nav><!-- /.nav -->
+
+<main>
+
+  <router-outlet></router-outlet>
+
+</main>
+
+
+<footer>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 col-sm-6 text-left">
+          <h4 class="heading no-margin">About Us</h4>
+          <hr class="mint">
+          <p>Metus sem posuere dolor, vitae suscipit mauris nisl vel tellus. Suspendisse potenti. Proin efficitur malesuada metus eu auctor.</p>
+          <p>Aliquam sit amet luctus sapien. Quisque vehicula elementum ultricies. Donec a nunc aliquam.</p>
+        </div><!-- /.col-md-4 -->
+
+        <!--<div class="col-md-2 col-sm-6 text-left">
+          <h4 class="heading no-margin">Company</h4>
+          <hr class="mint">
+          <div class ="no-padding">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="services.html">Freelancers</a>
+            <a href="how-1.html">How it works</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div><!-- /.col-md-2 -->
+
+        <div class="col-md-3 col-sm-6 text-left">
+          <h4 class="heading no-margin">Other Services</h4>
+          <hr class="mint">
+          <div class="no-padding">
+            <a [routerLink]="['/privacy']">Privacy Policy</a>
+            <a [routerLink]="['/terms']">Terms & Conditions</a>
+          </div>
+        </div><!-- /.col-md-3 -->
+
+        <div *ngIf="isLogged===true">
+        <div class="col-md-3 col-sm-6 text-left">
+          <h4 class="heading no-margin">My account</h4>
+          <hr class="mint">
+          <div class="no-padding">
+            <div *ngIf="isStudentTeacher === true">
+              <a (click)="goToBookings()"><i class="fa fa-graduation-cap"></i> Teacher Profile</a>
+            </div>
+            <div>
+              <a (click)="goToProfile()"><i class="fa fa-user"></i>  Student Profile</a>
+            </div>
+          </div>
+          </div><!-- /.col-md-3 -->
+          </div>
+
+      <!--  <div class="col-md-3 col-sm-6 text-left">
+          <h4 class="heading no-margin">Browse</h4>
+          <hr class="mint">
+          <div class="no-padding">
+            <a href="services.html">Top Freelancers this Month of April</a>
+            <a href="services.html">Top Freelancers by Skill</a>
+            <a href="services.html">Top Freelancers in USA</a>
+            <a href="services.html">Top Freelancers in UK</a>
+            <a href="services.html">Top Freelancers in Australia</a>
+            <a href="services.html">Top Freelancers in Kenya</a>
+          </div>
+        </div><!-- /.col-md-3-->
+
+      </div><!-- /.row
+      <div class="clearfix"></div>
+    </div><!-- /.container-->
+      </div>
+  </div><!-- /.footer -->
+
+</footer>

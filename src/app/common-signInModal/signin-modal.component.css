@@ -1,0 +1,62 @@
+.modal-wide .modal-dialog {
+  width: 40%;
+}
+
+.modal-dialog.modal-sm {
+  width: 300px;
+  padding: 0;
+  margin: 30px auto 30px auto;
+}
+
+.modal-backdrop.in {
+  opacity: 0.75;
+}
+
+.modal-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.modal-content {
+  border-radius: 5px;
+}
+
+.modal-body {
+  margin: 0;
+  padding: 20px 0 10px;
+  align-items: center;
+}
+
+.modal-header .close {
+  margin-top: 2px;
+  margin-right: 14px;
+}
+a {
+  text-decoration: none;
+  color: #1abc9c;
+  cursor:pointer;
+
+}
+a:hover
+{
+  text-decoration: none;
+}
+.login-buttons {
+  letter-spacing: 0.01em;
+}
+.login-buttons li a span{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-align: center;
+
+}
+.login-buttons .btn-content {
+
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+

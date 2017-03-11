@@ -1,0 +1,12 @@
+/*styles for home content only*/
+.header-jobpost{
+  height:7vh;
+}
+
+div.job:before {
+  content: none;
+}
+
+.booking-information-container{
+  padding-top: 30px;
+}
